@@ -10,38 +10,38 @@ En cada caso, declarar una regla CSS que produzca el siguiente efecto:
 */
 /*-------- 1 --------*/
 
-h1 em{
+h1 > em, h2 > em, h3 > em, h4 > em, h5 > em{
     color: red;
 }
 
 /*-------- 2 --------*/
 
-div p [href]{
+div > p[href]{
     color: yellow;
 }
 
 /*-------- 3 --------*/
 
-div .ultimo ul{
+div > .ultimo > ul{
     color: yellow;
 }
 
-div .ultimo ul [href]{
+div > .ultimo > ul > [href]{
     color: blue;
 }
 
 /*-------- 4 --------*/
 
-div .important{
+div > .important{
     color: green;
 }
 
-h1 .important{
+h1 > .important{
     color: red;
 }
 /*-------- 5 --------*/
 
-h1 [title]{
+h1[title]{
     color: blue;
 }
 
