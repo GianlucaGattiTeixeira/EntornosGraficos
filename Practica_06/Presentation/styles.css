@@ -1,0 +1,83 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-input
+{
+    margin:3rem;
+}
+label
+{
+    font-size: large;
+    color: orangered;
+}
+
+#navbar 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(44, 44, 44);
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+#navbar li
+{
+    display: block;
+    padding: 8px;
+    float: left;
+}
+#navbar a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=checkbox] {
+    zoom: 3;
+    margin: 4px 0;
+}
+input[type=submit] {
+    margin: 4px 0;
+    border-radius: 4px;
+    width:100%;
+    border: 1px solid #ccc;
+    height: 3rem;
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+.DeleteButton
+{
+    background-color: red;
+    color: white;
+}
+.EditButton
+{
+    background-color: yellow;
+    color: black;
+}

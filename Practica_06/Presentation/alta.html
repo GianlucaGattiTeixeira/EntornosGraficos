@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <ul id="navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="listado.php">listado</a></li>
+    </ul>
+    <form action="../logic/alta.php" method="post" class="form-input">
+        <div>
+            <label for="nombre_ciudad">name</label><br>
+            <input type="text" name="nombre_ciudad">
+        </div>
+        <div>
+            <label for="nombre_pais">pais</label><br>
+            <input type="text" name="nombre_pais">
+        </div>
+        <div>
+            <label for="habitantes">habitantes</label><br>
+            <input type="text" name="habitantes">
+        </div>
+        <div>
+            <label for="superficie">superficie</label><br>
+            <input type="text" name="superficie">
+        </div>
+        <div>
+            <label for="superficie">tiene metro</label><br>
+            <input type="checkbox" name="metro">
+        </div>
+        <div>
+            <input class="CreateButton" type="submit" >
+        </div>
+    </form>
+</body>
