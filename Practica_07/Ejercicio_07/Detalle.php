@@ -3,14 +3,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-link"><a href="VerUsuario.php">Ver variables de sesion</a></li>
-            <li class="nav-link"><a href="Formulario.html">Formulario</a></li>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-link"><a href="Listado.php">Listado</a></li>
+                <li class="nav-link"><a href="Carrito.php">Carrito</a></li>
         </ul>
     </nav>  
-    <?php
+    <?php   
         if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['idproducto']))
         {
             include($_SERVER['DOCUMENT_ROOT']."/Codes/Entornos Graficos/Entornos Graficos/Practica_07/conexion2.inc");

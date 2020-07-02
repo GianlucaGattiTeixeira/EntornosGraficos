@@ -4,7 +4,7 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['idproducto']) && iss
 {
     if (!empty($_SESSION['carrito']) && (isset($_SESSION['carrito'][$_POST['idproducto']]) ) )
     {
-        $_SESSION['carrito'][$c['idproducto']]["cantidad"] = $_POST['idproducto'];
+        $_SESSION['carrito'][$_POST['idproducto']]["cantidad"] = $_POST['cantidad'];
     }
 }
 

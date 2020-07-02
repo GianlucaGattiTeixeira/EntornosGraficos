@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-link"><a href="Listado.php">Listado</a></li>
+            <li class="nav-link"><a href="Carrito.php">Carrito</a></li>
+        </ul>
+    </nav>  
     <?php
     session_start();
     if (!empty($_SESSION['carrito']))
