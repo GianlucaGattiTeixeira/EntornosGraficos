@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-link"><a href="VerSesion.php">Ver variables de sesion</a></li>
+            <li class="nav-link"><a href="Formulario.html">Formulario</a></li>
+        </ul>
+    </nav>  
+    <form action="./SetSession.php" method="post" class="form-inline">
+        <div class="form-group">
+            <div class="p-3"></div>
+                <label for="nombre">name</label><br>
+                <input type="text" name="nombre" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="p-3"></div>
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" name="contrasena" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="p-3"></div>
+                <input class="btn btn-default." type="submit" title="Siguinte">
+            </div>
+        </div>
+    </form>
+</body>
