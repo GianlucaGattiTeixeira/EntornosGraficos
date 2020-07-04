@@ -11,7 +11,7 @@
         </ul>
     </nav>  
     <?php 
-        include($_SERVER['DOCUMENT_ROOT']."/Codes/Entornos Graficos/Entornos Graficos/Practica_07/conexion2.inc");
+        include("./conexion2.php");
         $statement = "SELECT * FROM catalogo";
         $ciudades = mysqli_query($link, $statement) or die (mysqli_error($link));
     ?>

@@ -1,5 +1,5 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");//replace the second part with the actual location
+    include("../conexion.php");//replace the second part with the actual location
     //Captura datos desde el Form anterior
     $nomciudad = $_POST['nombre_ciudad'];
     $pais = $_POST['nombre_pais'];

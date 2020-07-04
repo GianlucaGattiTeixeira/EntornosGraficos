@@ -10,7 +10,7 @@
         <li><a href="listado.php">listado</a></li>
     </ul>
     <?php
-    include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");
+    include("../conexion.php");
     $Cant_por_Pag = 2;
     $pagina = isset ( $_GET['pagina']) ? $_GET['pagina'] : null ;
     if (!$pagina) 

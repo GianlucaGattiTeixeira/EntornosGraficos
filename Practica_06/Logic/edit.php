@@ -1,5 +1,5 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");//replace the second part with the actual location
+    include("../conexion.php");
     //Captura datos desde el Form anterior
     $IdCiudad = $_POST['ciudad'];
     $nomciudad = $_POST['nombre_ciudad'];
@@ -29,5 +29,5 @@
     
     // Cerrar la conexion
     mysqli_close($link);
-    header("location: http://localhost/Code/Practica_06/Presentation/listado.php"); //replace this with the actual location
+    header("location: ../Presentation/listado.php"); //replace this with the actual location
 ?>

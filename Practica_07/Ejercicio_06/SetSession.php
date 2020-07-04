@@ -4,7 +4,7 @@
         if ( isset($_POST['email']) )
         {
             
-            include($_SERVER['DOCUMENT_ROOT']."/Codes/Entornos Graficos/Entornos Graficos/Practica_07/conexion.inc");
+            include("./conexion.php");
             $statement = "SELECT nombre_usuario FROM Usuarios WHERE email = '". $_POST['email']." ' ";
             $nombre = mysqli_query($link, $statement) or die (mysqli_error($link));
             $alumno = mysqli_fetch_assoc($nombre);

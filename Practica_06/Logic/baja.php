@@ -1,5 +1,5 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");
+    include("../conexion.php");
     //Captura datos desde el Form anterior
     $IdCiudad = $_POST['ciudad'];
     //Arma la instrucción SQL y luego la ejecuta

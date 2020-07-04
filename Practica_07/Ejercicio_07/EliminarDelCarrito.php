@@ -10,6 +10,6 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST['idproducto']) )
 }
 
 
-$redirect = "location:http://localhost/Codes/Entornos Graficos/Entornos Graficos/Practica_07/Ejercicio_07/Carrito.php";
+$redirect = "location: ./Carrito.php";
 header($redirect);
 ?>

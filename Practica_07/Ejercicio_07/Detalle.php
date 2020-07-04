@@ -14,7 +14,7 @@
     <?php   
         if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['idproducto']))
         {
-            include($_SERVER['DOCUMENT_ROOT']."/Codes/Entornos Graficos/Entornos Graficos/Practica_07/conexion2.inc");
+            include("./conexion2.php");
             $statement = "SELECT * FROM catalogo Where id = " . $_POST['idproducto'];
             $p = mysqli_query($link, $statement) or die (mysqli_error($link));
             $c = mysqli_fetch_assoc($p);

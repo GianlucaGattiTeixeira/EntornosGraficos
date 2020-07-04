@@ -12,7 +12,7 @@
         if (isset($_POST['ciudad']))
         {
             $CiudadId = $_POST['ciudad'];
-            include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");
+            include("../conexion.php");
 
             $statement = "SELECT * FROM ciudades WHERE $CiudadId = Id_Ciudad";
             $result = mysqli_query($link, $statement) or die (mysqli_error($link));

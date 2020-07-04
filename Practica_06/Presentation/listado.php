@@ -9,7 +9,7 @@
         <li><a href="listado.php">listado</a></li>
     </ul>
     <?php 
-    include($_SERVER['DOCUMENT_ROOT']."/code/conexion.inc");
+    include("../conexion.php");
     $statement = "SELECT * FROM ciudades";
     $ciudades = mysqli_query($link, $statement) or die (mysqli_error($link));
     ?>
